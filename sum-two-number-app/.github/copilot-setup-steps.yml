@@ -1,0 +1,10 @@
+steps:
+  - name: Install .NET SDK
+    run: |
+      dotnet --version
+  - name: Install MAUI workloads
+    run: |
+      dotnet workload install maui
+  - name: Restore dependencies
+    run: |
+      dotnet restore
